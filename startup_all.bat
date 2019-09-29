@@ -23,8 +23,8 @@ if "%project%" == "" (
 REM prepare cse microservice.yaml
 REM cse:
 REM  credentials:
-REM    accessKey: UZLI6CLENEO6D2ANV35U
-REM    secretKey: nAQ7jQyynhuDckGGtzNYMJGDZoFqaEfNwhadIXXP
+REM    accessKey: yourak
+REM    secretKey: yoursk
 REM    akskCustomCipher: default
 :microservice
 echo APPLICATION_ID: weathermap> microservice.yaml
@@ -53,13 +53,6 @@ copy httpproxy.properties .\weather-beta\conf\
 
 if not exist ".\forecast\conf\" md .\forecast\conf\
 copy httpproxy.properties .\forecast\conf\
-
-REM  proxy:
-REM    enable: true
-REM    host: proxy.huawei.com
-REM    port: 8080
-REM    username: l00247303
-REM    passwd: Huawei012.
 
 echo   proxy:>> microservice.yaml
 echo     enable: %proxy.enabled%>> microservice.yaml
