@@ -16,7 +16,7 @@
 	<mirrors>
 		<mirror>
 			<id>huaweicloud</id>
-			<mirrorOf>*,!HuaweiCloudSDK</mirrorOf>
+			<mirrorOf>*,!HuaweiCloudSDK,!spring</mirrorOf>
 			<url>https://repo.huaweicloud.com/repository/maven/</url>
 		</mirror>
 	</mirrors>
